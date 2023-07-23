@@ -4,7 +4,7 @@ export default function Meme() {
     const [meme, setMeme] = useState({
         topText: "",
         bottomText: "",
-        randomImage: "" 
+        randomImage: "https://i.imgflip.com/1bij.jpg"
     })
     const [allMemes, setAllMemes] = useState([])
 
@@ -63,8 +63,8 @@ export default function Meme() {
             </div>
             <div className="meme">
                 <img src={meme.randomImage} className="meme--image" />
-                <h2 className="meme--text top">{meme.randomImage && meme.topText}</h2>
-                <h2 className="meme--text bottom">{meme.randomImage && meme.bottomText}</h2>
+                <h2 className="meme--text top">{meme.topText}</h2>
+                <h2 className="meme--text bottom">{meme.bottomText}</h2>
             </div>
         </main>
     )

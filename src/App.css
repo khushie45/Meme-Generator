@@ -48,9 +48,12 @@ body {
   font-size: 1.55rem;
 }
 
+main {
+  padding: 36px;
+}
+
 .form {
   max-width: 100%;
-  padding: 25px;
   display: grid;
   grid-template: 50px 50px 60px/ 1fr;
   gap: 17px;
@@ -65,10 +68,9 @@ body {
 }
 
 .form--button {
-  margin-top: 10px;
   grid-column: 1 / -1;
   font-family: "Karla", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   border-radius: 5px;
   background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
   color: white;
@@ -77,39 +79,42 @@ body {
 }
 
 .meme {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
 }
 
 .meme--image {
-    max-width: 90%;
-    border-radius: 6px;
-    width: 500px;
-    height: 500px;
+  max-width: 90%;
+  border-radius: 6px;
+  width: 500px;
+  height: 500px;
 }
 
 .meme--text {
-    position: absolute;
-    text-align: center;
-    font-family: 'karla', sans-serif;
-    margin: 10px;
-    font-size: 2.3em;
-    text-transform: uppercase;
-    color: white;
-    letter-spacing: 1px;
-    text-shadow:
-        2px 2px 0 #000,
-        -2px -2px 0 #000,
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        0 2px 0 #000,
-        2px 0 0 #000,
-        0 -2px 0 #000,
-        -2px 0 0 #000,
-        2px 2px 5px #000;
+  position: absolute;
+  width: 44%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  font-family: 'karla', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
 }
 
 .bottom {
@@ -132,4 +137,13 @@ body {
 
 .footer--title {
   font-size: 1.55rem;
+}
+
+.footer--link:link, .footer--link:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.footer--link:hover, .footer--link:active {
+  text-decoration: underline;
 }
