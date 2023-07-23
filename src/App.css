@@ -90,12 +90,12 @@ main {
   max-width: 90%;
   border-radius: 6px;
   width: 500px;
-  height: 500px;
+  height: 400px;
 }
 
 .meme--text {
   position: absolute;
-  width: 44%;
+  max-width: 35%;
   text-align: center;
   left: 50%;
   transform: translateX(-50%);
